@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrariaConsumo", "LibrariaConsumo\LibrariaConsumo.csproj", "{4A999A46-FA77-4D34-AD53-5BEE287EBD40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumidorDLL", "ConsumidorDLL\ConsumidorDLL.csproj", "{2CE0D1A2-E9F9-4388-B2E8-4AB86202E178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A999A46-FA77-4D34-AD53-5BEE287EBD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A999A46-FA77-4D34-AD53-5BEE287EBD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A999A46-FA77-4D34-AD53-5BEE287EBD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A999A46-FA77-4D34-AD53-5BEE287EBD40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE0D1A2-E9F9-4388-B2E8-4AB86202E178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE0D1A2-E9F9-4388-B2E8-4AB86202E178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE0D1A2-E9F9-4388-B2E8-4AB86202E178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE0D1A2-E9F9-4388-B2E8-4AB86202E178}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CF1C485-D2B7-4EB2-9882-AC013680C400}
+	EndGlobalSection
+EndGlobal
