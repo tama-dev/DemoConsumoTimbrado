@@ -48,7 +48,6 @@ namespace ConsumidorDLL
             RespuestaFacturacion respuestaFactu = consumoDemo.Timbrar(token, xmlutf8);
 
 
-            
 
             Console.ReadLine();
         }

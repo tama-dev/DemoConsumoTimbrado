@@ -33,8 +33,7 @@ namespace LibrariaConsumo
             request.AddParameter("application/json", credencialesJson, ParameterType.RequestBody);
             
             //usar esta línea de código si el framework es menor a 4.7.2, esto es por el https 
-            //ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
-
+            ServicePointManager.SecurityProtocol = (SecurityProtocolType)192 | (SecurityProtocolType)768 | (SecurityProtocolType)3072;
             IRestResponse response = client.Execute(request);
 
             //serializamos
@@ -66,6 +65,9 @@ namespace LibrariaConsumo
             request.AddHeader("Content-Type", "application/json");
             //request.AddHeader("Cookie", "ARRAffinity=a4d7bddfba22dd5d8ac277b5ebbb4370b7b1f9719b58675583154d70fedac669; ARRAffinitySameSite=a4d7bddfba22dd5d8ac277b5ebbb4370b7b1f9719b58675583154d70fedac669");
             request.AddParameter("application/json", xmlSerializado, ParameterType.RequestBody);
+
+            //usar esta línea de código si el framework es menor a 4.7.2, esto es por el https 
+            ServicePointManager.SecurityProtocol = (SecurityProtocolType)192 | (SecurityProtocolType)768 | (SecurityProtocolType)3072;
             IRestResponse response = client.Execute(request);
 
             RespuestaFacturacion resp = JsonConvert.DeserializeObject<RespuestaFacturacion>(response.Content);
@@ -84,6 +86,9 @@ namespace LibrariaConsumo
             var request = new RestRequest(Method.POST);
             request.AddHeader("Authorization", $"Bearer {token}");
             //request.AddHeader("Cookie", "ARRAffinity=a4d7bddfba22dd5d8ac277b5ebbb4370b7b1f9719b58675583154d70fedac669; ARRAffinitySameSite=a4d7bddfba22dd5d8ac277b5ebbb4370b7b1f9719b58675583154d70fedac669");
+
+            //usar esta línea de código si el framework es menor a 4.7.2, esto es por el https 
+            ServicePointManager.SecurityProtocol = (SecurityProtocolType)192 | (SecurityProtocolType)768 | (SecurityProtocolType)3072;
             IRestResponse response = client.Execute(request);
 
             RespuestaTimbresDisponibles resp = JsonConvert.DeserializeObject<RespuestaTimbresDisponibles>(response.Content);
@@ -110,6 +115,9 @@ namespace LibrariaConsumo
             request.AddHeader("Content-Type", "application/json");
             //request.AddHeader("Cookie", "ARRAffinity=a4d7bddfba22dd5d8ac277b5ebbb4370b7b1f9719b58675583154d70fedac669; ARRAffinitySameSite=a4d7bddfba22dd5d8ac277b5ebbb4370b7b1f9719b58675583154d70fedac669");
             request.AddParameter("application/json", datosCancelSerializados, ParameterType.RequestBody);
+
+            //usar esta línea de código si el framework es menor a 4.7.2, esto es por el https 
+            ServicePointManager.SecurityProtocol = (SecurityProtocolType)192 | (SecurityProtocolType)768 | (SecurityProtocolType)3072;
             IRestResponse response = client.Execute(request);
 
             RespuestaCancelacionCSD resp = JsonConvert.DeserializeObject<RespuestaCancelacionCSD>(response.Content);
