@@ -1,7 +1,6 @@
 ﻿using LibrariaConsumo.Models;
 using Newtonsoft.Json;
 using RestSharp;
-using RestSharp.Serialization.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
